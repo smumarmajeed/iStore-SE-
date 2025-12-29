@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyber Glass - Neural Interface Design</title>
+    <title>EYEONIC-The World Of Lenses</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -49,34 +49,56 @@ https://templatemo.com/tm-597-neural-glass
                             <stop offset="50%" style="stop-color:#ff69b4"/>
                             <stop offset="100%" style="stop-color:#9370db"/>
                         </linearGradient>
+                        <filter id="glow">
+                            <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+                            <feMerge>
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
                     </defs>
-                    <circle cx="50" cy="30" r="8" fill="url(#logoGradient)" opacity="0.8">
+                
+                    <!-- Left Glass Lens -->
+                    <circle cx="35" cy="50" r="12" stroke="url(#logoGradient)" stroke-width="3" fill="none" filter="url(#glow)">
+                        <animate attributeName="r" values="12;13;12" dur="2s" repeatCount="indefinite"/>
+                    </circle>
+                
+                    <!-- Right Glass Lens -->
+                    <circle cx="65" cy="50" r="12" stroke="url(#logoGradient)" stroke-width="3" fill="none" filter="url(#glow)">
+                        <animate attributeName="r" values="12;13;12" dur="2s" repeatCount="indefinite"/>
+                    </circle>
+                
+                    <!-- Bridge -->
+                    <line x1="47" y1="50" x2="53" y2="50" stroke="url(#logoGradient)" stroke-width="3" filter="url(#glow)">
+                        <animate attributeName="stroke-width" values="3;4;3" dur="1.8s" repeatCount="indefinite"/>
+                    </line>
+                
+                    <!-- Left Temple (Arm) -->
+                    <line x1="23" y1="48" x2="15" y2="45" stroke="url(#logoGradient)" stroke-width="2" opacity="0.7"/>
+                
+                    <!-- Right Temple (Arm) -->
+                    <line x1="77" y1="48" x2="85" y2="45" stroke="url(#logoGradient)" stroke-width="2" opacity="0.7"/>
+                
+                    <!-- Decorative Neural Dots -->
+                    <circle cx="50" cy="25" r="4" fill="url(#logoGradient)" opacity="0.8">
                         <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
                     </circle>
-                    <circle cx="30" cy="60" r="6" fill="url(#logoGradient)" opacity="0.6">
+                    <circle cx="30" cy="70" r="3" fill="url(#logoGradient)" opacity="0.6">
                         <animate attributeName="opacity" values="0.6;1;0.6" dur="2.5s" repeatCount="indefinite"/>
                     </circle>
-                    <circle cx="70" cy="65" r="7" fill="url(#logoGradient)" opacity="0.7">
-                        <animate attributeName="opacity" values="0.7;1;0.7" dur="1.8s" repeatCount="indefinite"/>
+                    <circle cx="70" cy="72" r="3" fill="url(#logoGradient)" opacity="0.6">
+                        <animate attributeName="opacity" values="0.6;1;0.6" dur="2.5s" repeatCount="indefinite"/>
                     </circle>
-                    <line x1="50" y1="30" x2="30" y2="60" stroke="url(#logoGradient)" stroke-width="2" opacity="0.6">
-                        <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
-                    </line>
-                    <line x1="50" y1="30" x2="70" y2="65" stroke="url(#logoGradient)" stroke-width="2" opacity="0.6">
-                        <animate attributeName="opacity" values="0.6;1;0.6" dur="2.2s" repeatCount="indefinite"/>
-                    </line>
-                    <line x1="30" y1="60" x2="70" y2="65" stroke="url(#logoGradient)" stroke-width="2" opacity="0.6">
-                        <animate attributeName="opacity" values="0.6;1;0.6" dur="2.8s" repeatCount="indefinite"/>
-                    </line>
                 </svg>
-                NEURALGLASS
+                
+                EYEONIC
             </a>
             <ul class="nav-links">
-                <li><a href="#features">Neural</a></li>
-                <li><a href="#showcase">Matrix</a></li>
-                <li><a href="#timeline">Evolution</a></li>
-                <li><a href="#contact">Connect</a></li>
-                <li><a href="https://example.com" target="_blank" class="external-link">External</a></li>
+                <li><a href="#features">Brands</a></li>
+                <li><a href="#showcase">Product</a></li>
+                <li><a href="#timeline">journey</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="Login.html" target="_blank" class="external-link">Login</a></li>
 </ul>
             </ul>
             <div class="mobile-menu-toggle">
@@ -97,35 +119,35 @@ https://templatemo.com/tm-597-neural-glass
     <!-- Section 1: Hero -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <div class="hero-subtitle">Welcome to the Future</div>
-            <h1>NEURAL INTERFACE</h1>
+            <div class="hero-subtitle">Welcome to the world of lenses/glasses</div>
+            <h1>EYEONIC</h1>
             
             <div class="hero-description">
-                <p>Experience the convergence of consciousness and technology through quantum-enhanced glassmorphism interfaces. Step into a reality where digital dreams become tangible experiences, transcending the boundaries between mind and machine.</p>
+                <p>Experience the fusion of vision and innovation through precision-crafted optical designs. Step into a world where style meets clarity, and every frame transforms sight into an extraordinary experience.</p>
             </div>
 
             <div class="hero-stats">
                 <div class="hero-stat">
                     <span class="hero-stat-number">99.9%</span>
-                    <span class="hero-stat-label">Neural Sync Rate</span>
+                    <span class="hero-stat-label">Customer's Trust</span>
                 </div>
                 <div class="hero-stat">
                     <span class="hero-stat-number">∞</span>
                     <span class="hero-stat-label">Processing Power</span>
                 </div>
                 <div class="hero-stat">
-                    <span class="hero-stat-number">0.001</span>
-                    <span class="hero-stat-label">Latency (ms)</span>
+                    <span class="hero-stat-number">100%</span>
+                    <span class="hero-stat-label">Quality</span>
                 </div>
                 <div class="hero-stat">
                     <span class="hero-stat-number">24/7</span>
-                    <span class="hero-stat-label">Neural Access</span>
+                    <span class="hero-stat-label">Servies</span>
                 </div>
             </div>
             
             <div class="cta-buttons">
-                <a href="#features" class="cta-button">Initialize Neural Link</a>
-                <a href="#showcase" class="cta-button secondary">Explore Matrix</a>
+                <a href="#features" class="cta-button">Discover Our Brands</a>
+                <a href="#showcase" class="cta-button secondary">Explore Products</a>
             </div>
         </div>
     </section>
@@ -133,33 +155,45 @@ https://templatemo.com/tm-597-neural-glass
     <!-- Section 2: Diagonal Features -->
     <section class="features" id="features">
         <div class="features-container">
-            <h2 class="section-title">QUANTUM CAPABILITIES</h2>
+            <h2 class="section-title">OUR BRANDS</h2>
             <div class="diagonal-grid">
                 <div class="feature-row">
                     <div class="feature-content glass">
-                        <div class="feature-icon">🧠</div>
-                        <h3>Neural Processing</h3>
-                        <p>Advanced AI-driven interfaces that adapt to your consciousness patterns, creating personalized digital experiences that evolve with your neural pathways.</p>
+                        <div class="feature-icon">🕶️</div>
+                        <h3>Gucci</h3>
+                        <p>Gucci is one of the world’s most prestigious luxury fashion houses, celebrated for blending Italian craftsmanship, bold innovation, and timeless style.</p>
                     </div>
-                    <div class="feature-visual glass"></div>
+                    <div class="feature-visual">
+                        <video autoplay muted loop playsinline>
+                          <source src="images/1.mp4" type="video/mp4">
+                        </video>
+                      </div>
                 </div>
                 
                 <div class="feature-row">
                     <div class="feature-content glass">
-                        <div class="feature-icon">⚡</div>
-                        <h3>Quantum Speed</h3>
-                        <p>Instantaneous data processing through quantum tunneling algorithms, delivering response times that exist outside conventional spacetime constraints.</p>
+                        <div class="feature-icon">👁️</div>
+                        <h3>Ray-Ban</h3>
+                        <p>Ray-Ban is one of the most recognized eyewear brands in the world, symbolizing authenticity, freedom, and self-expression.</p>
                     </div>
-                    <div class="feature-visual glass"></div>
+                    <div class="feature-visual">
+                        <video autoplay muted loop playsinline>
+                          <source src="images/2.mp4" type="video/mp4">
+                        </video>
+                      </div>
                 </div>
                 
                 <div class="feature-row">
                     <div class="feature-content glass">
                         <div class="feature-icon">🌐</div>
-                        <h3>Dimensional Sync</h3>
-                        <p>Seamless synchronization across multiple reality layers, ensuring your digital presence remains consistent throughout parallel dimensions.</p>
+                        <h3>Ralph</h3>
+                        <p>Ralph Lauren represents timeless sophistication, heritage craftsmanship, and refined simplicity.</p>
                     </div>
-                    <div class="feature-visual glass"></div>
+                    <div class="feature-visual">
+                        <video autoplay muted loop playsinline>
+                          <source src="images/3.mp4" type="video/mp4">
+                        </video>
+                      </div>
                 </div>
             </div>
         </div>
@@ -167,48 +201,41 @@ https://templatemo.com/tm-597-neural-glass
 
     <!-- Section 3: Hexagonal Showcase -->
     <section class="showcase" id="showcase">
-        <h2 class="section-title">MATRIX PROTOCOLS</h2>
+        <h2 class="section-title">Product</h2>
         <div class="hexagon-container">
             <div class="hexagon">
                 <div class="hexagon-inner glass">
-                    <div class="hexagon-icon">🔮</div>
-                    <h4>Holographic UI</h4>
-                    <p>3D interfaces projected into reality space</p>
+                    <div class="hexagon-icon"></div>
+                    <img src="images/product.png" alt="Product" style= "width: 207px;"class="hexagon-img-0">
                 </div>
             </div>
             <div class="hexagon">
                 <div class="hexagon-inner glass">
-                    <div class="hexagon-icon">🛡️</div>
-                    <h4>Quantum Security</h4>
-                    <p>Unbreakable encryption protocols</p>
+                    <div class="hexagon-icon"></div>
+                    <img src="images/product1.png" alt="Product" style="width: 240px; "class="hexagon-img-1">  
                 </div>
             </div>
             <div class="hexagon">
                 <div class="hexagon-inner glass">
-                    <div class="hexagon-icon">🚀</div>
-                    <h4>Warp Navigation</h4>
-                    <p>Instant travel between data nodes</p>
+                    <div class="hexagon-icon"></div>
+                    <img src="images/product2.png" alt="Product" style= "width: 207px;"class="hexagon-img-2">
                 </div>
             </div>
             <div class="hexagon">
                 <div class="hexagon-inner glass">
-                    <div class="hexagon-icon">💎</div>
-                    <h4>Crystal Storage</h4>
-                    <p>Infinite capacity data crystals</p>
+                    <img src="images/product3.png" alt="Product" style= "width: 207px;"class="hexagon-img-3">
                 </div>
             </div>
             <div class="hexagon">
                 <div class="hexagon-inner glass">
-                    <div class="hexagon-icon">🎯</div>
-                    <h4>Neural Targeting</h4>
-                    <p>Thought-based interaction systems</p>
+                    <div class="hexagon-icon"></div>
+                    <img src="images/product4.png" alt="Product" style= "width: 207px;"class="hexagon-img-4">
                 </div>
             </div>
             <div class="hexagon">
                 <div class="hexagon-inner glass">
-                    <div class="hexagon-icon">⭐</div>
-                    <h4>Stellar Network</h4>
-                    <p>Galactic-scale connectivity matrix</p>
+                    <div class="hexagon-icon"></div>
+                    <img src="images/product5.png" alt="Product"class="hexagon-img-5">
                 </div>
             </div>
         </div>
@@ -216,15 +243,33 @@ https://templatemo.com/tm-597-neural-glass
 
     <!-- Section 4: Timeline -->
     <section class="timeline" id="timeline">
-        <h2 class="section-title">EVOLUTION TIMELINE</h2>
+        <h2 class="section-title">journey</h2>
         <div class="timeline-container">
             <div class="timeline-line"></div>
             
             <div class="timeline-item">
                 <div class="timeline-content glass">
-                    <div class="timeline-year">2024</div>
-                    <h4>Genesis Protocol</h4>
-                    <p>NeuralGlass is a cutting-edge cyberpunk glassmorphism HTML template featuring a striking purple, pink, and green color palette with futuristic neural network aesthetics.</p>
+                    <div class="timeline-year">2021</div>
+                    <h4>Where It All Began</h4>
+                    <p>EYEONIC was born — starting with a vision to redefine how people see the world through stylish and smart eyewear.</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content glass">
+                    <div class="timeline-year">2022</div>
+                    <h4>Innovation & Design</h4>
+                    <p>We introduced advanced lenses and frame collections that combined elegance with technology.</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content glass">
+                    <div class="timeline-year">2023</div>
+                    <h4>Expanding Vision</h4>
+                    <p>Expanded across major cities with new designs and sustainable materials for a better planet.</p>
                 </div>
                 <div class="timeline-dot"></div>
             </div>
@@ -232,26 +277,8 @@ https://templatemo.com/tm-597-neural-glass
             <div class="timeline-item">
                 <div class="timeline-content glass">
                     <div class="timeline-year">2025</div>
-                    <h4>Matrix Integration</h4>
-                    <p>Built with pure HTML/CSS and vanilla JavaScript, it offers smooth scrolling, mobile-responsive navigation with hamburger menu, parallax effects, and dynamic visual elements that respond to user interaction.</p>
-                </div>
-                <div class="timeline-dot"></div>
-            </div>
-            
-            <div class="timeline-item">
-                <div class="timeline-content glass">
-                    <div class="timeline-year">2026</div>
-                    <h4>Quantum Leap</h4>
-                    <p>This HTML CSS template is brought to you by TemplateMo website. Perfect for tech startups, AI companies, gaming platforms, or any project requiring a bold, futuristic web presence.</p>
-                </div>
-                <div class="timeline-dot"></div>
-            </div>
-            
-            <div class="timeline-item">
-                <div class="timeline-content glass">
-                    <div class="timeline-year">2027</div>
-                    <h4>Neural Singularity</h4>
-                    <p>Human consciousness successfully merges with AI systems, creating hybrid intelligences that transcend biological limitations.</p>
+                    <h4>Future in Focus</h4>
+                    <p>Now shaping the future of smart vision — connecting style, comfort, and intelligence in every frame.</p>
                 </div>
                 <div class="timeline-dot"></div>
             </div>
@@ -276,18 +303,18 @@ https://templatemo.com/tm-597-neural-glass
             
             <div class="contact-form glass">
                 <div class="form-group">
-                    <input type="text" placeholder="Neural ID (Name)" required>
+                    <input type="text" placeholder=" (Name)" required>
                 </div>
                 <div class="form-group">
-                    <input type="email" placeholder="Quantum Channel (Email)" required>
+                    <input type="email" placeholder=" (Email)" required>
                 </div>
                 <div class="form-group">
-                    <input type="text" placeholder="Mission Objective (Subject)" required>
+                    <input type="text" placeholder=" (Contact number)" required>
                 </div>
                 <div class="form-group">
-                    <textarea rows="5" placeholder="Transmission Data (Message)" required></textarea>
+                    <textarea rows="5" placeholder=" (Message)" required></textarea>
                 </div>
-                <button type="submit" class="submit-btn">TRANSMIT TO MATRIX</button>
+                <button type="submit" class="submit-btn">Send Message</button>
             </div>
         </div>
     </section>
@@ -296,25 +323,32 @@ https://templatemo.com/tm-597-neural-glass
     <footer>
         <div class="footer-content">
             <div class="footer-links">
-                <a href="#features">Neural Networks</a>
-                <a href="#showcase">Matrix Protocols</a>
-                <a href="#timeline">Evolution</a>
+                <a href="#features">Brands</a>
+                <a href="#showcase">Product</a>
+                <a href="#timeline">journey</a>
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms of Service</a>
                 <a href="#">Documentation</a>
                 <!-- Add external links -->
-    			<a href="https://github.com/yourproject" target="_blank" rel="noopener">GitHub</a>
+    			<a href="https://github.com/yourproject" target="_blank" rel="noopener">Instagram</a>
             </div>
             <div class="footer-copyright">
-                <p>&copy; 2025 NeuralGlass Interface. All quantum rights reserved across dimensions.</p>
+                <p>&copy; 2025 EYEONIC. All Space rights reserved across Store.</p>
             </div>
             <div class="footer-design">
                 Design: <a href="https://templatemo.com" target="_blank" rel="nofollow noopener">TemplateMo</a> | 
-                Enhanced by Neural AI Systems | 
-                <a href="#">Quantum Framework</a>
+                Enhanced by SM UMAR MAJEED | 
+                <a href="#">EYEONIC</a>
             </div>
         </div>
     </footer>
 <script src="templatemo-neural-scripts.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
